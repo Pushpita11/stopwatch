@@ -1,0 +1,67 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: system-ui, sans-serif; }
+
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  background: #f5f7fa;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,.1);
+  text-align: center;
+  width: min(100%, 360px);;
+}
+
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  flex: 1 1 45%;
+  padding: .6rem .8rem;
+  border: none;
+  border-radius: .5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform .15s ease;
+}
+
+button:active { transform: scale(.96); }
+button:disabled { opacity: .45; cursor: not-allowed; }
+
+#start { background: #1abc9c; color: #fff; }
+#pause { background: #e67e22; color: #fff; }
+#reset { background: #e74c3c; color: #fff; }
+#lap   { background: #3498db; color: #fff; }
+
+.laps { text-align: left; }
+.laps h2 { margin-bottom: .5rem; font-size: 1rem; color: #555; }
+#lapList { list-style: decimal-leading-zero inside; }
+#lapList li { padding: .25rem 0; font-variant-numeric: tabular-nums; }
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Fix overflow of timer text */
+#time {
+  font-size: 2.5rem;
+  font-weight: bold;
+  word-break: break-word;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  margin-bottom: 1.5rem;
+  color: #000;
+}

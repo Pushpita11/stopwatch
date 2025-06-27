@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main class="card">
+    
+     <h1 class="title">⏱️ Stopwatch</h1>
+     <div id="time">00:00.000</div>
+
+    <div class="controls">
+      <button id="start">Start</button>
+      <button id="pause" disabled>Pause</button>
+      <button id="reset" disabled>Reset</button>
+      <button id="lap" disabled>Lap</button>
+    </div>
+
+    <section class="laps">
+      <h2>Laps</h2>
+      <ol id="lapList"></ol>
+    </section>
+  </main>
+</body>
+</html>
